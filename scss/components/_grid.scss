@@ -46,7 +46,7 @@
           margin-top: 0;
 
           // make column width a percentage of the column number / total columns
-          flex-basis: #{$i / 12 * 100} + "%";
+          flex-basis: #{$i / 12 * 100 + "%"} ;
         }
       }
     }
