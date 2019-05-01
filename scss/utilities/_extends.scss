@@ -7,6 +7,9 @@
   padding: 0.75em 1.5em;
   border-radius: 0.35em;
   transition: opacity 0.3s;
+  //display: flex;
+//  flex-wrap: nowrap;
+  //flex-direction: row;
   &:hover {
     color: $white;
     opacity: 0.8;
@@ -19,7 +22,7 @@
 .btn {
   &--default{
     @extend %btn;
-    background-color: $primary-color;
+    background-color: $secondary-color;
   }
   &--success{
     @extend %btn;

@@ -1,6 +1,9 @@
 .nav {
   display: flex;
-  &__item{
+  flex-basis: 1;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  &__item {
 
   }
 }

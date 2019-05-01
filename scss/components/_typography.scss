@@ -3,16 +3,29 @@
   text-decoration: none;
   font-weight: bold;
 }
-h1 {
+
+.container {
+  text-decoration: none;
+  color: $copy-color;
+}
+
+//.headline--primary
+//.headline--secondary
+
+.headline {
+    &--primary {
     color: $primary-color;
     margin: 0.35em 0 0;
     line-height: 1.25;
   }
+}
+
 p {
   color: $copy-color;
   line-height: 2em;
 }
-blockquote {
+
+.blockquote {
   color: $copy-color;
   font-style: italic;
   font-size: 1.5em;

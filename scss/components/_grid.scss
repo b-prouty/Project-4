@@ -16,7 +16,9 @@
   &__row {
     padding: 1em 10px;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
+    justify-content: space-between;
 
     // NOTE: replace with media query mixin if aiming for exceeds
     @media (min-width: 768px) {
@@ -26,7 +28,13 @@
 
   // .grid__col
   &__col {
-
+    &--12{
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
     // create grid columns dynamically
     // loop through each column size
     @for $i from 1 through 12 {

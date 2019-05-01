@@ -17,7 +17,7 @@
 }
 
 .btn--default {
-  background-color: #66E3C6;
+  background-color: #51DDFC;
 }
 .btn--success {
   background-color: lightgreen;
@@ -44,6 +44,8 @@
 
 ul {
   list-style: none;
+  text-decoration: none;
+  color: #808080;
 }
 
 p {
@@ -60,12 +62,21 @@ p {
 .grid__row {
   padding: 1em 10px;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
+  justify-content: space-between;
 }
 @media (min-width: 768px) {
   .grid__row {
     flex-direction: row;
   }
+}
+.grid__col--12 {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .grid__col--1 {
   margin-top: 10px;
@@ -200,7 +211,12 @@ p {
   font-weight: bold;
 }
 
-h1 {
+.container {
+  text-decoration: none;
+  color: #808080;
+}
+
+.headline--primary {
   color: #66E3C6;
   margin: 0.35em 0 0;
   line-height: 1.25;
@@ -211,7 +227,7 @@ p {
   line-height: 2em;
 }
 
-blockquote {
+.blockquote {
   color: #808080;
   font-style: italic;
   font-size: 1.5em;
@@ -226,6 +242,9 @@ blockquote {
 
 .nav {
   display: flex;
+  flex-basis: 1;
+  justify-content: space-around;
+  flex-wrap: nowrap;
 }
 
 /*# sourceMappingURL=styles.css.map */
