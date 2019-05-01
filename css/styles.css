@@ -1,3 +1,28 @@
+.btn--success, .btn--default {
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  border-radius: 0.35em;
+  transition: opacity 0.3s;
+}
+.btn--success:hover, .btn--default:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+.btn--success:active, .btn--default:active {
+  opacity: initial;
+}
+
+.btn--default {
+  background-color: #66E3C6;
+}
+.btn--success {
+  background-color: lightgreen;
+}
+
 * {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -151,6 +176,12 @@ p {
   [class^=grid__col] + [class^=grid__col] {
     margin-left: 10px;
   }
+}
+
+h1 {
+  color: #66E3C6;
+  margin: 0.35em 0 0;
+  line-height: 1.25;
 }
 
 /*# sourceMappingURL=styles.css.map */
