@@ -25,4 +25,16 @@
     @extend %btn;
     background-color: lightgreen;
   }
+  &--error{
+    @extend %btn;
+    background-color: tomato;
+  }
+  &--warning{
+    @extend %btn;
+    background-color: orange;
+  }
+  &--info{
+    @extend %btn;
+    background-color: purple;
+  }
 }
