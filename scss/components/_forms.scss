@@ -11,8 +11,8 @@
   }
 }
 .form__input {
+  @include center(90%);
   padding: 20px 10px;
-  width: 100%;
   border-bottom: 5px solid $primary-color;
   border-top: none;
   border-left: none;
