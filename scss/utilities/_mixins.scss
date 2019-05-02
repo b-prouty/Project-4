@@ -4,3 +4,36 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@mixin flexy(
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+}
+
+//media queries
+
+@mixin mq($break) {
+  $value: map-get($breakpoints, $break);
+  $sm: map-get($breakpoints, 'med');
+
+  @if $value == null {
+    @error "`#{$break}` is not a valid breakpoint name.";
+  }
+
+  @else if $value < $sm {
+    @media (max-width: $value) {
+      @content;
+    }
+  }
+  @else {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+}

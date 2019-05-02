@@ -12,3 +12,10 @@ $link-color: #7BE5FD;
 
 $max-width: 1100px;
 $gutter: 10px;
+
+
+// Breakpoints
+$breakpoints: (
+ 'med': 768px,
+  'lg': 992px,
+);

@@ -1,6 +1,9 @@
 %btn {
   color: $white;
-  display: inline-block;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  margin-top: 40px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;

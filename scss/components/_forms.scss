@@ -1,0 +1,21 @@
+
+.form {
+  @include flexy($dir: column);
+  justify-content: center;
+
+&__label--hidden {
+  display: none;
+  }
+  img {
+    @include center(50%);
+  }
+}
+.form__input {
+  padding: 20px 10px;
+  width: 100%;
+  border-bottom: 5px solid $primary-color;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: .35em;
+}
