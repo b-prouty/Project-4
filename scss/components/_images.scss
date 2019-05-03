@@ -1,0 +1,11 @@
+.img--logo {}
+.img--frame{}
+.img--avatar{}
+
+.img{
+  &--logo{}
+  &--frame{
+    padding: 15px;
+    border: 1px solid $copy-color;
+  }
+}

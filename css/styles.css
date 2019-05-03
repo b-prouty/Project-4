@@ -73,6 +73,14 @@ p {
     flex-direction: row;
   }
 }
+.grid__col--6 {
+  text-align: center;
+}
+.grid__col--12 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .grid__col--1 {
   margin-top: 10px;
   flex-basis: 100%;
@@ -362,6 +370,11 @@ p {
   border-left: none;
   border-right: none;
   border-radius: 0.35em;
+}
+
+.img--frame {
+  padding: 15px;
+  border: 1px solid #808080;
 }
 
 /*# sourceMappingURL=styles.css.map */

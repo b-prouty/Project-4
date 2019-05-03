@@ -21,11 +21,20 @@
     // NOTE: replace with media query mixin if aiming for exceeds
     @media (min-width: 768px) {
       @include flexy($dir: row);
+
     }
   }
 
   // .grid__col
   &__col {
+    &--6{
+      text-align: center;
+    }
+
+  &--12{
+    @include flexy($dir: row);
+    justify-content: space-between;
+  }
 
     // create grid columns dynamically
     // loop through each column size
