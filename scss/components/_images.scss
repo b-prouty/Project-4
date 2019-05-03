@@ -2,8 +2,10 @@
 .img--frame{}
 .img--avatar{}
 
-.img{
-  &--logo{}
+
+.img {
+  &--avatar{
+  }
   &--frame{
     padding: 15px;
     border: 1px solid $copy-color;

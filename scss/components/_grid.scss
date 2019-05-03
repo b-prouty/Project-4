@@ -16,34 +16,39 @@
 
   // .grid__row
   &__row {
+    @include flexy($dir: column);
     padding: 1em 10px;
 
     // NOTE: replace with media query mixin if aiming for exceeds
     @media (min-width: 768px) {
       @include flexy($dir: row);
-
     }
   }
 
   // .grid__col
   &__col {
-    &--6{
+    @include flexy($dir: row);
+    justify-content: center;
+    &--6 {
       text-align: center;
     }
-
-  &--12{
-    @include flexy($dir: row);
-    justify-content: space-between;
-  }
-
+    &--12 {
+      @include flexy($dir: row);
+      justify-content: space-between;
+      //flex-grow: 1;
+    }
     // create grid columns dynamically
     // loop through each column size
     @for $i from 1 through 12 {
-
+      @include flexy($dir: row);
+      flex-grow: 1;
       // concatenate CSS selector, ie when $i = 1,
       // selector would be .grid__col--1
       &--#{$i} {
-
+        &.theme__colors {
+          @extend %btn;
+          background-color: map-get($grid-colors, #{$i});
+          }
         // base styles applied to all grid columns
         // NOTE: could be converted to a placeholder, along with margin
         // from the  media query
@@ -52,12 +57,7 @@
 
         // NOTE: replace with media query mixin if aiming for exceeds
         @media (min-width: 768px) {
-          &--8 {
-            width: 60%;
-          }
-          &--4 {
-            width: 35%;
-          }
+
           // base stlyes applied to all grid columns
           margin-top: 0;
 

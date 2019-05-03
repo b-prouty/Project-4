@@ -19,3 +19,14 @@ $break: (
  'med': 768px,
   'lg': 992px,
 );
+
+// Grid Colors
+$grid-colors: (
+'3': lavender,
+'4': $secondary-color,
+'5': lightgreen,
+'6': teal,
+'7': tomato,
+'8': orange,
+'12': $primary-color
+);

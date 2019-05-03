@@ -1,12 +1,12 @@
 %btn {
-  color: $white;
+  //color: $white;
   display: flex;
   flex-grow: 1;
   justify-content: center;
-  margin-top: 40px;
-  font-weight: bold;
+  //margin-top: 40px;
+  //font-weight: bold;
   text-decoration: none;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: 0.35em;
   transition: opacity 0.3s;
@@ -26,6 +26,7 @@
   &--default{
     @extend %btn;
     background-color: $secondary-color;
+    color: $white;
   }
   &--success{
     @extend %btn;
@@ -41,6 +42,6 @@
   }
   &--info{
     @extend %btn;
-    background-color: purple;
+    background-color: lavender;
   }
 }
