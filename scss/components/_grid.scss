@@ -15,7 +15,7 @@
 .grid {
 &__col--9{
   @include flexy($dir: column);
-  
+
 
 }
   // .grid__row
@@ -31,7 +31,7 @@
 
   // .grid__col
   &__col {
-    @include flexy($dir: row);
+    @include flexy($dir: column);
     justify-content: center;
     &--6 {
       text-align: center;
@@ -44,7 +44,6 @@
     &--12 {
       @include flexy($dir: row);
       justify-content: space-between;
-      //flex-grow: 1;
     }
     // create grid columns dynamically
     // loop through each column size

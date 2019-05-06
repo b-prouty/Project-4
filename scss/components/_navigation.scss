@@ -5,6 +5,10 @@
   &__item {
     padding: 10px 15px;
     margin: 0 auto;
+    @include flexy($dir: column);
+    flex-grow: 1;
+    width: 100%;
+    text-align: center;
 
     a {
       text-decoration: none;
@@ -21,10 +25,11 @@
       }
   }
   @media (min-width: 768px) {
-    margin-top: 0;
-    flex-basis: 100%;
-    .nav__item {
-      @include flexy($dir: column);
+    margin-top: 20px;
+    @include flexy($dir: row);
+    //flex-basis: 100%;
+
+    &__item {
       flex-grow: 1;
       width: 100%;
       text-align: center;
