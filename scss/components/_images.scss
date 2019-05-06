@@ -4,7 +4,11 @@
 
 
 .img {
+  &--logo{
+    text-align: center;
+  }
   &--avatar{
+    padding-bottom: 30px;
   }
   &--frame{
     padding: 15px;

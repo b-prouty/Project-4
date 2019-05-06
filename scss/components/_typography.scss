@@ -32,10 +32,12 @@
 p {
   color: $copy-color;
   line-height: 2em;
+  text-align: left;
 }
 
 .blockquote {
   color: $copy-color;
+  line-height: 1.25;
   font-style: italic;
   font-size: 1.5em;
   font-weight: 100;
