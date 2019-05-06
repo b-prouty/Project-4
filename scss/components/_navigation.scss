@@ -3,13 +3,11 @@
   align-items: center;
 
   &__item {
-    display: block;
+    padding: 10px 15px;
     margin: 0 auto;
-    //padding: 20px;
-    text-align: center;
+
     a {
       text-decoration: none;
-      text-align: center;
       color: $copy-color;
       &:hover {
           color: $white;

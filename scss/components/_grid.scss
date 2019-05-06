@@ -13,7 +13,11 @@
 }
 // grid base class
 .grid {
+&__col--9{
+  @include flexy($dir: column);
+  
 
+}
   // .grid__row
   &__row {
     @include flexy($dir: column);
