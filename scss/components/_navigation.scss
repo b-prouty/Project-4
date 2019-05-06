@@ -1,15 +1,19 @@
 .nav {
-  display: flex;
-  flex-basis: 1;
-  justify-content: space-around;
-  flex-wrap: nowrap;
+  @include flexy($dir: column);
+  align-items: center;
+
   &__item {
-    @include flexy($wrap: nowrap);
-    margin: 0 0.65em;
-    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    //padding: 20px;
+    text-align: center;
     a {
       text-decoration: none;
+      text-align: center;
       color: $copy-color;
+      &:hover {
+          color: $white;
+        }
     }
 
     &:hover {
@@ -17,5 +21,15 @@
         background-color: $primary-color;
         border-radius: .35em;
       }
+  }
+  @media (min-width: 768px) {
+    margin-top: 0;
+    flex-basis: 100%;
+    .nav__item {
+      @include flexy($dir: column);
+      flex-grow: 1;
+      width: 100%;
+      text-align: center;
+    }
   }
 }

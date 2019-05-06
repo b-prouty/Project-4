@@ -7,8 +7,9 @@
 }
 ul {
   list-style: none;
-  text-decoration: none;
-  color: $copy-color;
+  //color: $copy-color;
+  margin: 0;
+  padding: 0;
 }
 p {
   margin-bottom: 1.25em;

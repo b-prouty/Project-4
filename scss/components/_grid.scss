@@ -32,6 +32,11 @@
     &--6 {
       text-align: center;
     }
+    &--7 {
+      justify-content: space-around;
+      margin: 0 auto;
+      text-align: center;
+    }
     &--12 {
       @include flexy($dir: row);
       justify-content: space-between;
@@ -46,7 +51,14 @@
       // selector would be .grid__col--1
       &--#{$i} {
         &.theme__colors {
-          @extend %btn;
+          //@extend %btn;
+          display: flex;
+          //flex-grow: 1;
+          justify-content: center;
+          text-decoration: none;
+          padding: 0.75em 1.5em;
+          border-radius: 0.35em;
+          transition: opacity 0.3s;
           background-color: map-get($grid-colors, #{$i});
           }
         // base styles applied to all grid columns
@@ -54,12 +66,15 @@
         // from the  media query
         margin-top: 10px;
         flex-basis: 100%;
+        //flex-grow: 1;
+        width: 100%;
 
         // NOTE: replace with media query mixin if aiming for exceeds
         @media (min-width: 768px) {
 
           // base stlyes applied to all grid columns
           margin-top: 0;
+
 
           // make column width a percentage of the column number / total columns
           flex-basis: #{$i / 12 * 100 + "%"} ;
