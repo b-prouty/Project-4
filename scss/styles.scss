@@ -5,14 +5,9 @@
 
 
 // NOTE: import utilities and base partials here:
-@import 'utilities/variables',
-        'utilities/mixins',
-        'utilities/functions',
-        'utilities/index',
-        'utilities/extends';
+@import 'utilities';
 
-@import "base/index",
-        "base/base";
+@import 'base';
 
 
 

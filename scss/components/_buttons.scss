@@ -1,0 +1,23 @@
+.btn {
+  &--default{
+    @extend %btn;
+    background-color: $secondary-color;
+    color: $white;
+  }
+  &--success{
+    @extend %btn;
+    background-color: lightgreen;
+  }
+  &--error{
+    @extend %btn;
+    background-color: tomato;
+  }
+  &--warning{
+    @extend %btn;
+    background-color: orange;
+  }
+  &--info{
+    @extend %btn;
+    background-color: lavender;
+  }
+}

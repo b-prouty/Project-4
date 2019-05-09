@@ -3,7 +3,7 @@
   color: $white;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 1.5em 3.5em;
+  padding: .75em 2.5em;
   border-radius: 0.35em;
   transition: opacity 0.3s;
   margin-top: 15px;
@@ -13,29 +13,5 @@
   }
   &:active {
     opacity: initial;
-  }
-}
-
-.btn {
-  &--default{
-    @extend %btn;
-    background-color: $secondary-color;
-    color: $white;
-  }
-  &--success{
-    @extend %btn;
-    background-color: lightgreen;
-  }
-  &--error{
-    @extend %btn;
-    background-color: tomato;
-  }
-  &--warning{
-    @extend %btn;
-    background-color: orange;
-  }
-  &--info{
-    @extend %btn;
-    background-color: lavender;
   }
 }
